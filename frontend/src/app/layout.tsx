@@ -1,20 +1,24 @@
-import { Inter } from 'next/font/google'
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
-export const metadata = {
-    title: 'Yoga Wellness Life Cure',
-    description: 'Your path to wellness through yoga',
+export const metadata: Metadata = {
+  title: "Harmony - Yoga & Plants",
+  description: "Find your balance with yoga and nature",
 }
 
 export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode
-}) {
-    return (
-        <html lang="en">
-            <body className={inter.className}>{children}</body>
-        </html>
-    )
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
+    </html>
+  )
 }
+
