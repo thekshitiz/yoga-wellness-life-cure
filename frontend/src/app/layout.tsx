@@ -1,24 +1,21 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Harmony - Yoga & Plants",
-  description: "Find your balance with yoga and nature",
+    title: 'Yoga Wellness Life Cure',
+    description: 'Find balance and healing through yoga and plants',
 }
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
-    </html>
-  )
+    children,
+}: {
+    children: React.ReactNode
+}) {
+    return (
+        <html lang="en">
+            <body className="min-h-screen bg-background font-sans antialiased">
+                {children}
+            </body>
+        </html>
+    )
 }
-

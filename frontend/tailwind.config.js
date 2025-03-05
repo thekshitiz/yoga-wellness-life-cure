@@ -2,11 +2,10 @@
 module.exports = {
     darkMode: ['class'],
     content: [
-        './pages/**/*.{ts,tsx}',
-        './components/**/*.{ts,tsx}',
-        './app/**/*.{ts,tsx}',
+        './src/pages/**/*.{ts,tsx}',
+        './src/components/**/*.{ts,tsx}',
+        './src/app/**/*.{ts,tsx}',
         './src/**/*.{ts,tsx}',
-        '*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
         container: {
@@ -58,7 +57,16 @@ module.exports = {
                 sm: 'calc(var(--radius) - 4px)',
             },
             fontFamily: {
-                sans: ['var(--font-inter)'],
+                sans: [
+                    'system-ui',
+                    '-apple-system',
+                    'BlinkMacSystemFont',
+                    'Segoe UI',
+                    'Roboto',
+                    'Helvetica Neue',
+                    'Arial',
+                    'sans-serif',
+                ],
             },
         },
     },
