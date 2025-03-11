@@ -34,7 +34,7 @@ export default function Contact() {
                     <div className="space-y-6">
                         <h2>Get in Touch</h2>
                         <p className="text-muted-foreground">
-                            Have questions? We'd love to hear from you.
+                            Have questions? We&apos;d love to hear from you.
                         </p>
                         <div className="space-y-4">
                             <div className="flex items-center gap-3">
