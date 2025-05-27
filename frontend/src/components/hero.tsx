@@ -1,28 +1,36 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import Image from 'next/image';
 
-export default function Hero() {
+const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-background">
-      <div className="container flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] text-center">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="mb-6 text-foreground">Find Your Balance with Yoga & Nature</h1>
-          <p className="mb-8 text-lg text-muted-foreground">
-            A harmonious space where mindful movement meets the healing power of plants. Nurture your body and home with
-            our curated yoga sessions and plant collection.
-          </p>
-          <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center">
-            <Button asChild size="lg" className="rounded-full">
-              <Link href="#yoga">Book a Session</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="rounded-full">
-              <Link href="#plants">Browse Plants</Link>
-            </Button>
-          </div>
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-50 to-green-50">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/yoga-hero-bg.jpg"
+          alt="Yoga Wellness Background"
+          fill
+          className="object-cover opacity-20"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 z-10 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+          Pioneer Lifestyle Medical Center
+        </h1>
+        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          We harmonize evidence-based medicine with the ancient wisdom of Ayurveda and Yoga for your complete well-being.
+        </p>
+        <div className="flex justify-center gap-4">
+          <button className="bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors">
+            Book Now
+          </button>
+          <button className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors">
+            Learn More
+          </button>
         </div>
       </div>
-      <div className="absolute inset-0 -z-10 bg-[url('/placeholder.svg?height=1080&width=1920')] opacity-10 bg-cover bg-center"></div>
-    </section>
-  )
-}
+    </div>
+  );
+};
+
+export default Hero;
 
