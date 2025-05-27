@@ -2,19 +2,19 @@ import Image from 'next/image';
 
 const packages = [
   {
-    title: "60 Day Therapeutic Yoga & Ayurveda Panchakarma Training",
-    image: "/images/package-1.jpg",
-    description: "Comprehensive program combining therapeutic yoga with traditional Ayurvedic treatments for deep healing and transformation."
+    title: "Wellness Starter",
+    image: "/images/starter.jpg",
+    description: "Perfect for those beginning their wellness journey. Includes basic health assessment and personalized plan."
   },
   {
-    title: "28 Day Therapeutic Yoga & Ayurveda Therapy Training",
-    image: "/images/package-2.jpg",
-    description: "Intensive program focusing on yoga therapy and Ayurvedic principles for holistic health management."
+    title: "Lifestyle Transformation",
+    image: "/images/transformation.jpg",
+    description: "Comprehensive program for sustainable lifestyle changes and long-term health improvements."
   },
   {
-    title: "200 Hours Ayurveda Massage and Panchakarma Therapy Training",
-    image: "/images/package-3.jpg",
-    description: "Professional training in traditional Ayurvedic massage techniques and Panchakarma therapies."
+    title: "Executive Wellness",
+    image: "/images/executive.jpg",
+    description: "Tailored for busy professionals, focusing on stress management and work-life balance."
   }
 ];
 
@@ -23,13 +23,13 @@ const Packages = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Packages</h2>
-          <div className="w-20 h-1 bg-green-600 mx-auto"></div>
+          <h2 className="text-4xl font-bold text-neutral-900 mb-4">Our Packages</h2>
+          <div className="w-20 h-1 bg-neutral-400 mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {packages.map((pkg, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden border border-neutral-200">
               <div className="relative h-64">
                 <Image
                   src={pkg.image}
@@ -39,13 +39,13 @@ const Packages = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                <h3 className="text-xl font-semibold text-neutral-900 mb-4">
                   {pkg.title}
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-neutral-600 mb-6">
                   {pkg.description}
                 </p>
-                <button className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                <button className="w-full bg-neutral-900 text-neutral-50 py-3 rounded-lg font-semibold hover:bg-neutral-800 transition-colors">
                   Learn More
                 </button>
               </div>
@@ -54,7 +54,7 @@ const Packages = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="inline-block bg-transparent border-2 border-green-600 text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-600 hover:text-white transition-colors">
+          <button className="inline-block border-2 border-neutral-900 text-neutral-900 px-8 py-3 rounded-lg font-semibold hover:bg-neutral-900 hover:text-neutral-50 transition-colors">
             View More Packages
           </button>
         </div>

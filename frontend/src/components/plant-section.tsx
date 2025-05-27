@@ -28,11 +28,11 @@ const plants = [
 
 export default function PlantSection() {
     return (
-        <section id="plants" className="bg-secondary/50">
-            <div className="container">
+        <section id="plants" className="bg-neutral-50">
+            <div className="container mx-auto px-4 py-16">
                 <div className="text-center">
-                    <h2>Healing Plants</h2>
-                    <p className="text-muted-foreground">
+                    <h2 className="text-3xl font-bold text-neutral-900 mb-4">Healing Plants</h2>
+                    <p className="text-neutral-600 mb-8">
                         Enhance your space with these beneficial plants
                     </p>
                 </div>
@@ -46,10 +46,10 @@ export default function PlantSection() {
                         >
                             <Card>
                                 <CardHeader>
-                                    <CardTitle>{plant.title}</CardTitle>
+                                    <CardTitle className="text-neutral-900">{plant.title}</CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-neutral-600">
                                         {plant.description}
                                     </p>
                                 </CardContent>

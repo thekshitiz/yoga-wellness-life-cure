@@ -25,11 +25,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-neutral-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-          <div className="w-20 h-1 bg-green-600 mx-auto"></div>
+          <h2 className="text-4xl font-bold text-neutral-900 mb-4">Our Services</h2>
+          <div className="w-20 h-1 bg-neutral-400 mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -44,10 +44,10 @@ const Services = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                <h3 className="text-xl font-semibold text-neutral-900 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-neutral-600">
                   {service.description}
                 </p>
               </div>
